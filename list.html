@@ -16,10 +16,6 @@
            
                     $(document).ready(function(){
                     
-                    //Step 3:Add event handler for Button Click
-                    //get element id by button
-                    //button.addeventListerner("click" ,function(){})
-                  
                       $("button").click(function(){
                         //Step 4:
                         //get data from server using $.get method
@@ -30,8 +26,7 @@
 
                         
                            $.get("/api/flowers", function(data, status){
-                                // Step 5:
-                                // fetch data and iterate to show each flowername using paragrph element 
+                               
                                 for(var i=0;i<data.length;i++)
                                 {  
                                     p.innerHTML=p.innerHTML + " " +data[i].name;
