@@ -13,36 +13,7 @@
             </ol>
             <p id="para"> </p>
             <script>
-            // In Module AWP
-            // 1. HTML , 2. Js, 3. jQuery, 4.CSS
-            // Fullstack Developer:
-
-                // HTML syntax for  content  ( Element )
-                // javascript syntax for  logic implementation
-                // jQuery syntas for   DOM, ajax, event handling
-                // which code script block
-                // javascript syntaxt + and addon syntax of jQuery
-
-                    //classical : Ajax  technique
-                    // make a query for REST API 
-                    // once data available successfully will be able print or set to HTML element
-                    // if data does not arrive and faile will be able print error on console of brwoser
-
-                    //using library jQuery library
-                    //Ajax function is part  jQuery library
-
-                    //JQuery is used to provide
-                    // Event handling
-                    // DOM manipulation
-                    // Ajax    at Client Side ( in HTML and Browser)
-
-                    // $ , in jQuery is defined as selector
-                    // you can consider it behave like a reference in java
-                    //                            like a pointer in C, C++
-
-                    //Step 2: Write Event handler for Document.Ready
-                    // this is not needed now if you are using jQuery
-                    //document.addEventListener("")
+           
                     $(document).ready(function(){
                     
                     //Step 3:Add event handler for Button Click
@@ -56,14 +27,6 @@
                            console.log("button is clicked...")
                            var p=document.getElementById("para");
 
-                           // make Asynchronous Javascript call using $.get
-                           // first parameter is always relative url of your web api (REST API)
-                           // second paramter is always  callback function 
-                           // which will be invoked on received response from server REST API
-
-                           // ->   this is CPP way of calling point method
-                           //.     this  is java way of calling reference method
-                           //$.    is jQuery way of calling method which is inbuilt in jQuery
 
                         
                            $.get("/api/flowers", function(data, status){
