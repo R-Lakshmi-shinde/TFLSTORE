@@ -9,7 +9,7 @@ var Order = function (Order) {
 Order.createOrder = function (newOrder, result) {
   console.log("New Order to be added ");
   console.log(newOrder);
-  sql.query("INSERT INTO orders SET ?", newOrder, function (err, res) {
+  sql.query("INSERT INTO orders values ?", newOrder, function (err, res) {
     if (err) {
       console.log("error: ", err);
       result(err, null);
