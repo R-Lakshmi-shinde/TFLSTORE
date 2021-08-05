@@ -8,7 +8,7 @@ var Product = function (Product) {
 Product.createProduct = function (newProduct, result) {
   console.log("New Product to be added ");
   console.log(newProduct);
-  sql.query("INSERT INTO products values ?", newProduct, function (err, res) {
+  sql.query("INSERT INTO products set ?", newProduct, function (err, res) {
     if (err) {
       console.log("error: ", err);
       result(err, null);
