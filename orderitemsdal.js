@@ -10,7 +10,7 @@ var OrderItem = function (OrderItem) {
 OrderItem.createOrderItem = function (newOrderItem, result) {
   console.log("New Orderitem to be added ");
   console.log(newOrderItem);
-  sql.query("INSERT INTO order_items SET ?", newOrderItem, function (err, res) {
+  sql.query("INSERT INTO order_items values ?", newOrderItem, function (err, res) {
     if (err) {
       console.log("error: ", err);
       result(err, null);
