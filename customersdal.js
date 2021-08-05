@@ -11,7 +11,7 @@ var Customer = function (Customer) {
 Customer.createCustomer = function (newCustomer, result) {
   console.log("New Customer to be added ");
   console.log(newCustomer);
-  sql.query("insert into customers SET ?", newCustomer, function (err, res) {
+  sql.query("insert into customers values ?", newCustomer, function (err, res) {
     if (err) {
       console.log("error: ", err);
       result(err, null);
