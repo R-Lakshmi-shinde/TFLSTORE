@@ -1,4 +1,4 @@
-//a Separate responsibility  for  Product  HTTP request handling
+//a Separate responsibility  for a product Product  HTTP request handling
 
 var Product = require("../dal/productsdal");
 
